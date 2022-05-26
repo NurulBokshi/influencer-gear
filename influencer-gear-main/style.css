@@ -1,0 +1,101 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Fjalla+One&family=Lobster&family=Poppins:ital,wght@0,500;0,600;0,700;0,900;1,500;1,700;1,900&family=Righteous&family=Staatliches&display=swap');
+
+/* utilities */
+body{
+    font-family: 'Anton', sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Righteous', cursive;
+    font-family: 'Staatliches', cursive;
+}
+/* common style */
+.container{
+    padding: 50px;
+}
+/* nav section style*/
+.nav-header{
+    display:flex;
+    justify-content: center;
+}
+.nav-list{
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+}
+nav ul li{
+    margin-right:36px;
+    font-size: 16px;
+    list-style: none;
+    margin-bottom:25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#3A3A3A;
+
+}
+@media only screen and (min-width:688px){
+    nav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .nav-header{
+        justify-content: flex-start;
+        margin-left: 75px;
+    }
+    .nav-list{
+        justify-content: flex-end;
+        margin-right: 75px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+    }
+   
+}
+/* influecer and main-camera css style */
+
+button{
+    background-color: #E02C6D;
+    border:none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Poppins';
+    border-radius: 8px;
+}
+.influencer-header{
+    display: flex;
+    justify-content: center;
+    
+}
+.camera-header{
+    display: flex;
+    justify-content: center;
+    order:2;
+ 
+}
+.camera-header img{
+    height: 250px;
+    width: 250px;
+}
+
+@media only screen and (min-width:688px){
+    .header-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .influencer-header{
+        justify-content: flex-start;
+        margin-left:20px;
+    }
+    .camera-header{
+        justify-content: flex-end;
+        margin-left:20px;
+    }
+}
