@@ -72,17 +72,26 @@ button{
 .influencer-header{
     display: flex;
     justify-content: center;
+    margin-top: 26px;
     
 }
 .camera-header{
     display: flex;
     justify-content: center;
     order:2;
- 
+    
+}
+.camera-header img:hover{
+    transform: scale(1.3);
+  
+}
+.camera-header img{
+    transition: transform 2s ease-in 1s;
 }
 .camera-header img{
     height: 250px;
     width: 250px;
+    
 }
 
 @media only screen and (min-width:688px){
@@ -101,6 +110,94 @@ button{
 }
 
 /* popular collection style added */
+.collection-items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+    margin-left: 20px;
+}
 .title-section{
     text-align: center;
+}
+.fa-star.fill{
+    color: #FB8200;
+
+}
+@media only screen and (max-width:688px){
+    .collection-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px){
+    .collection-items{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media only screen and (min-width:992px){
+    .collection-items{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+/* form section */
+input{
+    width:100%;
+    height: 3em;
+    font-weight: 900;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+}textarea{
+    font-size: 2em;
+    width:100%;
+    border-radius: 7px;
+    font-weight: 900;
+    text-align: center;
+}
+.gear-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 25px;
+}
+.gear{
+    margin-top: 75px;
+}
+@media only screen and (max-width:688px){
+    .gear-container{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+    .gear{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+    .input-form{
+        width:90%;
+    }
+} 
+@media only screen and (min-width:688px){
+    .gear-container{
+        grid-template-columns: repeat(2,1fr);
+        grid-gap:20px;
+    }
+}
+/* footer section */
+footer{
+    background-color: #0a0826;
+  color: white;
+  text-align: center;
+}
+footer h2{
+    font-size: 24px;
+    font-family: "Poppins";
+}
+footer p{
+    font-size: 14px;
+  color: #d9dbe1;
+  font-family: "Poppins";
+  font-weight: bold;
+}
+.fab{
+    color: white;
+    margin-right: 16px;
 }
